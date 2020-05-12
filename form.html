@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.2">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title" class="text-center">Time for traveling</h1>
+        <p id="description" class="text-center">We travel not to escape life but for life not to escape us.</p>
+      </header>
+
+      <form id="survey-form" action="index.html" method="post">
+
+        <!-- Name -->
+          <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                class="form-controlls"
+                required>
+          </div>
+
+          <!--email -->
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input 
+            type="email"
+            name="emal"
+            id="email"
+            placeholder="Enter email"
+            class="form-controlls"
+            required
+            >
+          </div>
+
+          <!--age-->
+
+          <div class="form-group">
+            <label for="age" id="number-label">Age <span class="clue">(Optional)</span></label>
+            <input 
+            type="number" 
+            name="age"
+            id="number"
+            min="5"
+            max="80" 
+            placeholder="Age"
+            class="form-controlls">
+          </div>
+
+          <!--Drop down-->
+          <div class="form-group">
+            <p>Which option best describes your travling interest?</p>
+            <select  class="form-controlls" name="Travel interest" id="dropdown" required>
+                <option disabled selected value>Select your interest</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Romantic">Romantic</option>
+                <option value="Advanture">Advanture</option>
+                <option value="Medation">Medation</option>
+                <option value="other">Other</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+              <p>Slect your traveling package</p>
+              <label >
+                <input 
+                name="travelling-package"
+                type="radio"
+                value="single"
+                class="input-radio"
+                checked
+                >Single
+              </label>
+
+              <label>
+                <input 
+                name="travelling-package"
+                type="radio"
+                value="couple"
+                class="input-radio">Couple
+              </label>
+
+              <label>
+                <input 
+                name="travelling-package"
+                type="radio"
+                value="friends"
+                class="input-radio">Friends
+              </label>
+
+              <label >
+                <input 
+                name="travelling-package"
+                value="family"
+                type="radio"
+                class="input-radio"
+                >Family
+              </label>
+          </div>
+
+          <!--Check-box Traveling places-->
+
+          <div class="form-group">
+            <p>Check the boxes of your best interest</p>
+            <label>
+              <input type="checkbox" name="places"value="kathmandu" class="input-checkbox">Kathmandu
+            </label>
+            <label>
+              <input type="checkbox" name="places" value="Pokhara" class="input-checkbox">Pokhara
+            </label>
+            <label>
+              <input type="checkbox" name="places" value="sagarmatha" class="input-checkbox">Sagarmatha
+            </label>
+            <label>
+              <input type="checkbox" name="places" value="muktinath" class="input-checkbox">Muktinath
+            </label>
+            <label>
+              <input type="checkbox" name="places" value="ghandruk"  class="input-checkbox">Ghandruk
+            </label>
+          </div>
+
+          <!--Coment box-->
+
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea name="coments" id="coments" class="input-textarea"
+            placeholder="Enter your coments here...">
+
+            </textarea>
+          </div>
+
+          <!--Botton submit-->
+
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+
+
+      </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+  </body>
+</html>
